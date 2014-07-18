@@ -198,10 +198,9 @@ Ext.define('CustomApp', {
 						value: this.down('#monthlyPatchCombobox').getValue()
 					}
 				]
-			},
+			}/*,
 			viewConfig: {
 				getRowClass: function(record) {
-					console.log('testing');
 					if (record && record.get('Tags').indexOf('Hotfix') !== -1) {
 						console.log('different color');
 					} 
@@ -209,7 +208,7 @@ Ext.define('CustomApp', {
 						console.log('same color');
 					}
 				}
-			}
+			}*/
 		});
 		
 	},

@@ -3,7 +3,7 @@
 <head>
     <title>Monthly Patch</title>
 
-    <script type="text/javascript" src="/apps/2.0rc1/sdk.js"></script>
+    <script type="text/javascript" src="/apps/2.0rc3/sdk.js"></script>
 
     <script type="text/javascript">
         Rally.onReady(function () {
@@ -207,10 +207,9 @@
 						value: this.down('#monthlyPatchCombobox').getValue()
 					}
 				]
-			},
+			}/*,
 			viewConfig: {
 				getRowClass: function(record) {
-					console.log('testing');
 					if (record && record.get('Tags').indexOf('Hotfix') !== -1) {
 						console.log('different color');
 					} 
@@ -218,7 +217,7 @@
 						console.log('same color');
 					}
 				}
-			}
+			}*/
 		});
 		
 	},
