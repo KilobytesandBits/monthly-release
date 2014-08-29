@@ -51,12 +51,16 @@ Ext.define('CustomApp', {
 		//the first drop down value should be 9 months ago
 		var today = new Date();
 		var startDate = new Date();
-		startDate.setDate(today.getDate());
+		
+		//always set to the first of the month, otherwise it will cause an issue with other months that do not have a matching date
+		startDate.setDate(1); 
 		startDate.setMonth(startDate.getMonth() - 9);
 
 		//the last drop down value should be 3 months from now
 		var endDate = new Date();
-		endDate.setDate(today.getDate());
+		
+		//always set to the first of the month, otherwise it will cause an issue with other months that do not have a matching date
+		endDate.setDate(1);
 		endDate.setMonth(endDate.getMonth() + 3);
 
 		//build the drop down values
